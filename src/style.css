@@ -4,6 +4,7 @@
     font-size: 62.5%;
     --bg-white: #ffffff;
     --primary: #00CDC6;
+    --padding-lg: 14rem;
 }
 
 html,
@@ -139,6 +140,26 @@ table {
     border-spacing: 0;
 }
 
+.text-2xl {
+    font-size: 3.2rem;
+}
+
+.text-xl {
+    font-size: 2.4rem;
+}
+
+.text-md {
+    font-size: 1.6rem;
+}
+
+.text-sm {
+    font-size: 1.2rem;
+}
+
+.font-bold {
+    font-weight: 500;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -172,12 +193,12 @@ table {
 .home-heading {
     font-size: 4rem;
     font-weight: bold;
-    padding: 2rem 10rem;
+    padding: 4rem var(--padding-lg);
 }
 
 .home-card {
     max-width: 28rem;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
 }
 
 .home-card-heading {
@@ -191,10 +212,10 @@ table {
 }
 
 .card-container {
-    padding: 2rem 8rem;
+    padding: 2rem var(--padding-lg);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 4rem;
 }
 
@@ -202,10 +223,62 @@ table {
     color: var(--primary);
 }
 
+.mid-section {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 8rem var(--padding-lg);
+}
+
+.mid-container {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 6.4rem 0;
+}
+
+.mid-card {
+    width: 28rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+
+.footer-heading {
+    padding: 2rem var(--padding-lg);
+    font-weight: 600;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 4rem var(--padding-lg);
+}
+
+.footer-card {
+    max-width: 20rem;
+}
+
 .footer-end {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    bottom: 0;
-    padding: 2rem 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+    font-size: 1.6rem;
 }
