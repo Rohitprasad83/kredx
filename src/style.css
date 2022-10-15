@@ -282,3 +282,89 @@ table {
     padding: 4rem 8rem;
     font-size: 1.6rem;
 }
+
+#form {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: absolute;
+    top: 12rem;
+    max-width: 60rem;
+    height: 60rem;
+    right: 5rem;
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.form-part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    margin: 4rem 0;
+}
+
+.form-input {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    outline: none;
+    border: 0;
+}
+
+.bg-grey {
+    background-color: lightgray;
+}
+
+.form-input-group {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-primary {
+    width: 16rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.4rem;
+    margin-left: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.form-part2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    gap: 24rem;
+}
+
+.btn-submit {
+    width: 16rem;
+    padding: 1rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.btn-previous {
+    color: var(--primary);
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}

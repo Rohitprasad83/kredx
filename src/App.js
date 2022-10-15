@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { Navbar, Card, Footer } from './components'
+import { Navbar, Card, Footer, Form } from './components'
 import bannerImg from './assets/1.png'
 import invoice1 from './assets/invoice1.svg'
 import invoice2 from './assets/invoice2.svg'
@@ -49,6 +49,7 @@ export default function App() {
       <div className="banner"></div>
       <img src={bannerImg} alt="Banner Image" className="banner-img" />
       <div>
+        <Form />
         <h1 className="home-heading">
           Why <span className="heading-primary text-primary">KredX</span> For
           Invoice Discounting?
