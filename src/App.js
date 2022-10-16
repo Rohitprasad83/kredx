@@ -17,8 +17,8 @@ export default function App() {
           Invoice Discounting?
         </h1>
         <section className="card-container">
-          {cardDetails.map(cardDetail => (
-            <Card cardDetail={cardDetail} />
+          {cardDetails.map((cardDetail, index) => (
+            <Card cardDetail={cardDetail} key={index} />
           ))}
         </section>
         <section className="mid-section">
