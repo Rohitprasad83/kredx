@@ -312,6 +312,8 @@ table {
 .form-input {
     background-color: #ffffff;
     padding: 1rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
     border-radius: 0.8rem;
     outline: none;
     border: 0;
@@ -324,6 +326,14 @@ table {
 .form-input-group {
     display: flex;
     gap: 2rem;
+}
+
+.form-group-input {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
 }
 
 .btn-primary {
@@ -400,5 +410,14 @@ table {
     }
     .mid-card {
         text-align: center;
+    }
+    #form {
+        max-width: 100vw;
+        right: 0;
+    }
+    .btn-group {
+        justify-content: space-between;
+        margin-top: auto;
+        gap: 12rem;
     }
 }
