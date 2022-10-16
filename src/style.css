@@ -194,8 +194,9 @@ table {
 
 .home-heading {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 500;
     padding: 4rem var(--padding-lg);
+    margin-top: 4rem;
 }
 
 .card-container {
@@ -204,6 +205,7 @@ table {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 4rem;
+    margin-bottom: 6.4rem;
 }
 
 .home-card {
@@ -211,13 +213,15 @@ table {
 }
 
 .home-card-heading {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
+    margin-top: 1.6rem;
 }
 
 .home-card-paragraph {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
 }
 
 .text-primary {
@@ -262,15 +266,10 @@ table {
 }
 
 .footer-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8rem;
     padding: 4rem var(--padding-lg);
-}
-
-.footer-card {
-    max-width: 20rem;
 }
 
 .footer-end {
@@ -282,6 +281,12 @@ table {
     justify-content: space-between;
     padding: 4rem 8rem;
     font-size: 1.6rem;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #form {
@@ -355,6 +360,11 @@ table {
     gap: 1.6rem;
 }
 
+.form-logo {
+    max-width: 20rem;
+    margin: 4rem auto;
+}
+
 .btn-group {
     display: flex;
     justify-content: space-between;
@@ -394,9 +404,27 @@ table {
     .mid-container {
         grid-template-columns: 1fr 1fr;
     }
+    .footer-heading {
+        padding: 2rem var(--padding-md);
+    }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        justify-content: center;
+        padding: 4rem var(--padding-md);
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        padding: 1.6rem 1rem;
+    }
+    .navbar-aside {
+        display: flex;
+        margin-left: auto;
+        font-size: 1.4rem;
+        gap: 0.8rem;
+    }
     .card-container {
         padding: 2rem var(--padding-sm);
         grid-template-columns: 1fr;
@@ -419,5 +447,13 @@ table {
         justify-content: space-between;
         margin-top: auto;
         gap: 12rem;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        padding: 4rem var(--padding-sm);
+    }
+    .footer-card {
+        text-align: center;
     }
 }

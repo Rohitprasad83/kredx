@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import logo from '../assets/sticky-logo.svg'
 function Form() {
   const [next, setNext] = useState(false)
   return (
@@ -40,6 +40,7 @@ function Form() {
       ) : (
         <>
           <div className="form-part2">
+            <img src={logo} alt="Logo" className="form-logo" />
             <input
               type="text"
               placeholder="Name of the industry"
