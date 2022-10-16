@@ -1,4 +1,5 @@
 import React from 'react'
+import './utils/reset.css'
 import './style.css'
 import { Navbar, Card, Footer, Form } from './components'
 import bannerImg from './assets/1.png'
@@ -9,17 +10,17 @@ export default function App() {
       <Navbar></Navbar>
       <div className="banner"></div>
       <img src={bannerImg} alt="Banner Image" className="banner-img" />
-      <div>
+      <main>
         <Form />
         <h1 className="home-heading">
           Why <span className="heading-primary text-primary">KredX</span> For
           Invoice Discounting?
         </h1>
-        <div className="card-container">
+        <section className="card-container">
           {cardDetails.map(cardDetail => (
             <Card cardDetail={cardDetail} />
           ))}
-        </div>
+        </section>
         <section className="mid-section">
           <h5 className="text-xl">HELPING BUSINESS OWNERS SINCE 2015</h5>
 
@@ -56,7 +57,7 @@ export default function App() {
             </div>
           </div>
         </section>
-      </div>
+      </main>
       <Footer />
     </div>
   )
